@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Piano</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="piano.css">
+	<script type="text/javascript" src=
+	https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js></script>
+
+</head>
+<body>
+	<div id="piano-lid"></div>
+	<div class="piano">
+		<section class="octave" id="o2">
+			<div class="key-container">
+				<div class="key" id="c2" data-numkey="36">
+					<p class="keyname">C</p>
+					<p class="controls">a</p> 
+				</div>
+				<div class="key sharp" id="c-2" data-numkey="37">
+					<p class="keyname">C#</p>
+					<p class="controls">w</p> 
+				</div>
+			</div>
+			
+			<div class="key-container">
+				<div class="key" id="d2" data-numkey="38">
+					<p class="keyname">D</p>
+					<p class="controls">s</p> 
+				</div>
+				<div class="key sharp" id="d-2" data-numkey="39">
+					<p class="keyname">D#</p>
+					<p class="controls">e</p> 
+				</div>
+			</div>
+			
+			<div class="key-container">
+				<div class="key" id="e2" data-numkey="40">
+					<p class="keyname">E</p>
+					<p class="controls">d</p> 
+				</div>
+			</div>
+			
+			<div class="key-container">
+				<div class="key" id="f2" data-numkey="41">
+					<p class="keyname">F</p>
+					<p class="controls">f</p> 
+				</div>
+				<div class="key sharp" id="f-2" data-numkey="42">
+					<p class="keyname">F#</p>
+					<p class="controls">t</p> 
+				</div>
+			</div>
+			
+			<div class="key-container">
+				<div class="key" id="g2" data-numkey="43">
+					<p class="keyname">G</p>
+					<p class="controls">g</p> 
+				</div>
+				<div class="key sharp" id="g-2" data-numkey="44">
+					<p class="keyname">G#</p>
+					<p class="controls">y</p> 
+				</div>
+			</div>
+			
+			
+			<div class="key-container">
+				<div class="key" id="a2" data-numkey="45">
+					<p class="keyname">A</p>
+					<p class="controls">h</p> 
+				</div>
+				<div class="key sharp" id="a-2" data-numkey="46">
+					<p class="keyname">A#</p>
+					<p class="controls">u</p> 
+				</div>
+			</div>
+			
+			<div class="key-container">
+				<div class="key" id="b2" data-numkey="47">
+					<p class="keyname">B</p>
+					<p class="controls">j</p> 
+				</div>
+			</div>
+		</section>
+
+		<section class="octave" id="o3">
+			<div class="key-container">
+				<div class="key" id="c3" data-numkey="48">
+					<p class="keyname">C</p>
+					<p class="controls">Right</p> 
+				</div>
+				<div class="key sharp" id="c-3" data-numkey="49">
+					<p class="keyname">C#</p>
+					<p class="controls">7</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="d3" data-numkey="50">
+					<p class="keyname">D</p>
+					<p class="controls">4</p> 
+				</div>
+				<div class="key sharp" id="d-3" data-numkey="51">
+					<p class="keyname">D#</p>
+					<p class="controls">8</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="e3" data-numkey="52">
+					<p class="keyname">E</p>
+					<p class="controls">5</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="f3" data-numkey="53">
+					<p class="keyname">F</p>
+					<p class="controls">6</p> 
+				</div>
+				<div class="key sharp" id="f-3" data-numkey="54">
+					<p class="keyname">F#</p>
+					<p class="controls">9</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="g3" data-numkey="55">
+					<p class="keyname">G</p>
+					<p class="controls">1</p> 
+				</div>
+				<div class="key sharp" id="g-3" data-numkey="56">
+					<p class="keyname">G#</p>
+					<p class="controls">0</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="a3" data-numkey="57">
+					<p class="keyname">A</p>
+					<p class="controls">2</p> 
+				</div>
+				<div class="key sharp" id="a-3" data-numkey="58">
+					<p class="keyname">A#</p>
+					<p class="controls">.</p> 
+				</div>
+			</div>
+			<div class="key-container">
+				<div class="key" id="b3" data-numkey="59">
+					<p class="keyname">B</p>
+					<p class="controls">3</p> 
+				</div>
+			</div>
+		</section>
+
+
+
+
+	</div>
+	<button>Toggle Labels</button>
+
+	<!--object mapping each keyboard key to piano key-->
+	<script src="keydata.js"></script>
+	<script src="piano.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+			box-sizing: border-box;
+		}
+
+		html,body{
+			margin:0;
+			height: 100%;
+			font-family: "Nunito", sans-serif;
+		}
+
+		#piano-lid{
+			width: 100%;
+			height:5%;
+			background-color: black;
+		}
+		.piano{
+			display: flex;
+			height:50%;
+		}
+
+		.octave{
+			display: flex;
+			height: 100%;
+			width:50%;
+			
+			
+		}
+
+		.key-container{
+			position: relative;
+			width:16%;
+			height: 100%;
+		}
+
+		.key{
+			border: 1px solid #0000003d;
+			border-radius: 5px;
+			background-color: white;
+			width:100%;
+			height: 100%;
+			position: relative;
+			box-shadow: inset 0px -2px 5px black;
+			transition: all .2s;
+			font-size: 1.2rem;
+			
+			
+			
+		}
+
+		p{
+			position: absolute;
+			text-align: center;
+			bottom: 10%;
+			left:10%;
+			
+		}
+
+		.controls{
+			bottom:0;
+		}
+		.sharp{
+			background-color: black;
+			background:linear-gradient(144deg, rgba(0,0,0,1) 37%, rgba(161,159,164,1) 80%, rgba(0,0,0,1) 97%);
+			border-left: inset 4px #060606;
+			height:70%;
+			width: 50%;
+			position: absolute;
+			top:0;
+			left:80%;
+			z-index: 1;
+			color:white;
+			font-size: 1rem;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+		}
+		
+
+		button{
+			background-color: #c53c8e;
+			color:white;
+			border: 2px solid black;
+			border-radius: 5px;
+			box-shadow: 2px 2px 4px #0a000054;
+			padding:.5rem;
+			margin: .5rem;
+			font:1.5rem;
+
+		}
+
+		button:active{
+			background-color:#a0326b;
+		}
+
+		.pressed{
+			/*background-color: red;*/
+	/*		box-shadow: inset 1px 1px 5px black;*/
+			transform:scale(0.9);
+			transform: translateY(2px);
+			background-color:rgba(0,0,255,.1);
+		}
+		.hidden{
+			display: none;
+		}
